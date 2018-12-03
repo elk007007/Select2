@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Test1 - Select2</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css">
+    <link href="https://select2.org/assets/7c647dd1b60ff2b17a493d7f00a18e26.css" type="text/css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+</head>
+
+<body>
+    <h1>Test 1 - Select2</h1>
+
+    <label>Single Selection</label>
+    <select class="js-states form-control" style="width: 400px;" name="state">
+        <optgroup label="Alaskan/Hawaiian Time Zone">
+            <option value="AK">Alaska</option>
+            <option value="HI">Hawaii</option>
+        </optgroup>
+        <optgroup label="Pacific Time Zone">
+            <option value="CA">California</option>
+            <option value="NV">Nevada</option>
+            <option value="OR">Oregon</option>
+            <option value="WA">Washington</option>
+        </optgroup>
+        <optgroup label="Mountain Time Zone">
+            <option value="AZ">Arizona</option>
+            <option value="CO">Colorado</option>
+            <option value="ID">Idaho</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NM">New Mexico</option>
+            <option value="ND">North Dakota</option>
+            <option value="UT">Utah</option>
+            <option value="WY">Wyoming</option>
+        </optgroup>
+    </select> 
+
+    <br />
+    <br />
+
+    <label>Multiple Selection</label>
+    <select class="js-states-multiple form-control" style="width: 400px;" name="states[]" multiple="multiple">
+        <optgroup label="Alaskan/Hawaiian Time Zone">
+            <option value="AK">Alaska</option>
+            <option value="HI">Hawaii</option>
+        </optgroup>
+        <optgroup label="Pacific Time Zone">
+            <option value="CA">California</option>
+            <option value="NV">Nevada</option>
+            <option value="OR">Oregon</option>
+            <option value="WA">Washington</option>
+        </optgroup>
+        <optgroup label="Mountain Time Zone">
+            <option value="AZ">Arizona</option>
+            <option value="CO">Colorado</option>
+            <option value="ID">Idaho</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NM">New Mexico</option>
+            <option value="ND">North Dakota</option>
+            <option value="UT">Utah</option>
+            <option value="WY">Wyoming</option>
+        </optgroup>
+    </select>    
+
+</body>
+
+<script type="text/javascript">
+
+    // Executed after loading all page elements 
+    $(function() {
+        $('.js-states').select2();        
+        $('.js-states-multiple').select2();
+    });
+
+</script>
+
+</html>
